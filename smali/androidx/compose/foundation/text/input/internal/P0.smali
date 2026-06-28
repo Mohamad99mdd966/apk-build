@@ -1,0 +1,620 @@
+.class public final Landroidx/compose/foundation/text/input/internal/P0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Lti/l;
+
+.field public final b:Landroidx/compose/foundation/text/input/internal/M0;
+
+.field public final c:Ljava/lang/Object;
+
+.field public d:Z
+
+.field public e:Z
+
+.field public f:Z
+
+.field public g:Z
+
+.field public h:Z
+
+.field public i:Z
+
+.field public j:Landroidx/compose/ui/text/input/Y;
+
+.field public k:Landroidx/compose/ui/text/d1;
+
+.field public l:Landroidx/compose/ui/text/input/L;
+
+.field public m:LO/h;
+
+.field public n:LO/h;
+
+.field public final o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+.field public final p:[F
+
+.field public final q:Landroid/graphics/Matrix;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Lti/l;Landroidx/compose/foundation/text/input/internal/M0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lti/l;",
+            "Landroidx/compose/foundation/text/input/internal/M0;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->a:Lti/l;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/P0;->b:Landroidx/compose/foundation/text/input/internal/M0;
+
+    .line 7
+    .line 8
+    new-instance p1, Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->c:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    new-instance p1, Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    .line 16
+    .line 17
+    invoke-direct {p1}, Landroid/view/inputmethod/CursorAnchorInfo$Builder;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    .line 21
+    .line 22
+    const/4 p1, 0x0
+
+    .line 23
+    const/4 p2, 0x1
+
+    .line 24
+    invoke-static {p1, p2, p1}, Landroidx/compose/ui/graphics/r1;->c([FILkotlin/jvm/internal/i;)[F
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->p:[F
+
+    .line 29
+    .line 30
+    new-instance p1, Landroid/graphics/Matrix;
+
+    .line 31
+    .line 32
+    invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 33
+    .line 34
+    .line 35
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->q:Landroid/graphics/Matrix;
+
+    .line 36
+    .line 37
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    :try_start_0
+    iput-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->j:Landroidx/compose/ui/text/input/Y;
+
+    .line 6
+    .line 7
+    iput-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->l:Landroidx/compose/ui/text/input/L;
+
+    .line 8
+    .line 9
+    iput-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->k:Landroidx/compose/ui/text/d1;
+
+    .line 10
+    .line 11
+    iput-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->m:LO/h;
+
+    .line 12
+    .line 13
+    iput-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 14
+    .line 15
+    sget-object v1, Lkotlin/y;->a:Lkotlin/y;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 16
+    .line 17
+    monitor-exit v0
+
+    .line 18
+    return-void
+
+    .line 19
+    :catchall_0
+    move-exception v1
+
+    .line 20
+    monitor-exit v0
+
+    .line 21
+    throw v1
+.end method
+
+.method public final b(ZZZZZZ)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    iput-boolean p3, p0, Landroidx/compose/foundation/text/input/internal/P0;->f:Z
+
+    .line 5
+    .line 6
+    iput-boolean p4, p0, Landroidx/compose/foundation/text/input/internal/P0;->g:Z
+
+    .line 7
+    .line 8
+    iput-boolean p5, p0, Landroidx/compose/foundation/text/input/internal/P0;->h:Z
+
+    .line 9
+    .line 10
+    iput-boolean p6, p0, Landroidx/compose/foundation/text/input/internal/P0;->i:Z
+
+    .line 11
+    .line 12
+    if-eqz p1, :cond_0
+
+    .line 13
+    .line 14
+    const/4 p1, 0x1
+
+    .line 15
+    iput-boolean p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->e:Z
+
+    .line 16
+    .line 17
+    iget-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->j:Landroidx/compose/ui/text/input/Y;
+
+    .line 18
+    .line 19
+    if-eqz p1, :cond_0
+
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/input/internal/P0;->c()V
+
+    .line 22
+    .line 23
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :catchall_0
+    move-exception p1
+
+    .line 26
+    goto :goto_1
+
+    .line 27
+    :cond_0
+    :goto_0
+    iput-boolean p2, p0, Landroidx/compose/foundation/text/input/internal/P0;->d:Z
+
+    .line 28
+    .line 29
+    sget-object p1, Lkotlin/y;->a:Lkotlin/y;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 30
+    .line 31
+    monitor-exit v0
+
+    .line 32
+    return-void
+
+    .line 33
+    :goto_1
+    monitor-exit v0
+
+    .line 34
+    throw p1
+.end method
+
+.method public final c()V
+    .locals 12
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->b:Landroidx/compose/foundation/text/input/internal/M0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/foundation/text/input/internal/M0;->a()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_1
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->j:Landroidx/compose/ui/text/input/Y;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_1
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->l:Landroidx/compose/ui/text/input/L;
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->k:Landroidx/compose/ui/text/d1;
+
+    .line 18
+    .line 19
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->m:LO/h;
+
+    .line 22
+    .line 23
+    if-eqz v0, :cond_1
+
+    .line 24
+    .line 25
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 26
+    .line 27
+    if-nez v0, :cond_0
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->p:[F
+
+    .line 31
+    .line 32
+    invoke-static {v0}, Landroidx/compose/ui/graphics/r1;->i([F)V
+
+    .line 33
+    .line 34
+    .line 35
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->a:Lti/l;
+
+    .line 36
+    .line 37
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->p:[F
+
+    .line 38
+    .line 39
+    invoke-static {v1}, Landroidx/compose/ui/graphics/r1;->a([F)Landroidx/compose/ui/graphics/r1;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v1
+
+    .line 43
+    invoke-interface {v0, v1}, Lti/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->p:[F
+
+    .line 47
+    .line 48
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 49
+    .line 50
+    invoke-static {v1}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v1}, LO/h;->o()F
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v1
+
+    .line 57
+    neg-float v1, v1
+
+    .line 58
+    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 59
+    .line 60
+    invoke-static {v2}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v2}, LO/h;->r()F
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v2
+
+    .line 67
+    neg-float v2, v2
+
+    .line 68
+    const/4 v3, 0x0
+
+    .line 69
+    invoke-static {v0, v1, v2, v3}, Landroidx/compose/ui/graphics/r1;->p([FFFF)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->q:Landroid/graphics/Matrix;
+
+    .line 73
+    .line 74
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->p:[F
+
+    .line 75
+    .line 76
+    invoke-static {v0, v1}, Landroidx/compose/ui/graphics/P;->a(Landroid/graphics/Matrix;[F)V
+
+    .line 77
+    .line 78
+    .line 79
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->b:Landroidx/compose/foundation/text/input/internal/M0;
+
+    .line 80
+    .line 81
+    iget-object v1, p0, Landroidx/compose/foundation/text/input/internal/P0;->o:Landroid/view/inputmethod/CursorAnchorInfo$Builder;
+
+    .line 82
+    .line 83
+    iget-object v2, p0, Landroidx/compose/foundation/text/input/internal/P0;->j:Landroidx/compose/ui/text/input/Y;
+
+    .line 84
+    .line 85
+    invoke-static {v2}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 86
+    .line 87
+    .line 88
+    iget-object v3, p0, Landroidx/compose/foundation/text/input/internal/P0;->l:Landroidx/compose/ui/text/input/L;
+
+    .line 89
+    .line 90
+    invoke-static {v3}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 91
+    .line 92
+    .line 93
+    iget-object v4, p0, Landroidx/compose/foundation/text/input/internal/P0;->k:Landroidx/compose/ui/text/d1;
+
+    .line 94
+    .line 95
+    invoke-static {v4}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 96
+    .line 97
+    .line 98
+    iget-object v5, p0, Landroidx/compose/foundation/text/input/internal/P0;->q:Landroid/graphics/Matrix;
+
+    .line 99
+    .line 100
+    iget-object v6, p0, Landroidx/compose/foundation/text/input/internal/P0;->m:LO/h;
+
+    .line 101
+    .line 102
+    invoke-static {v6}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 103
+    .line 104
+    .line 105
+    iget-object v7, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 106
+    .line 107
+    invoke-static {v7}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;)V
+
+    .line 108
+    .line 109
+    .line 110
+    iget-boolean v8, p0, Landroidx/compose/foundation/text/input/internal/P0;->f:Z
+
+    .line 111
+    .line 112
+    iget-boolean v9, p0, Landroidx/compose/foundation/text/input/internal/P0;->g:Z
+
+    .line 113
+    .line 114
+    iget-boolean v10, p0, Landroidx/compose/foundation/text/input/internal/P0;->h:Z
+
+    .line 115
+    .line 116
+    iget-boolean v11, p0, Landroidx/compose/foundation/text/input/internal/P0;->i:Z
+
+    .line 117
+    .line 118
+    invoke-static/range {v1 .. v11}, Landroidx/compose/foundation/text/input/internal/O0;->b(Landroid/view/inputmethod/CursorAnchorInfo$Builder;Landroidx/compose/ui/text/input/Y;Landroidx/compose/ui/text/input/L;Landroidx/compose/ui/text/d1;Landroid/graphics/Matrix;LO/h;LO/h;ZZZZ)Landroid/view/inputmethod/CursorAnchorInfo;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object v1
+
+    .line 122
+    invoke-interface {v0, v1}, Landroidx/compose/foundation/text/input/internal/M0;->updateCursorAnchorInfo(Landroid/view/inputmethod/CursorAnchorInfo;)V
+
+    .line 123
+    .line 124
+    .line 125
+    const/4 v0, 0x0
+
+    .line 126
+    iput-boolean v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->e:Z
+
+    .line 127
+    .line 128
+    :cond_1
+    :goto_0
+    return-void
+.end method
+
+.method public final d(Landroidx/compose/ui/text/input/Y;Landroidx/compose/ui/text/input/L;Landroidx/compose/ui/text/d1;LO/h;LO/h;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/text/input/internal/P0;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    iput-object p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->j:Landroidx/compose/ui/text/input/Y;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Landroidx/compose/foundation/text/input/internal/P0;->l:Landroidx/compose/ui/text/input/L;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Landroidx/compose/foundation/text/input/internal/P0;->k:Landroidx/compose/ui/text/d1;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Landroidx/compose/foundation/text/input/internal/P0;->m:LO/h;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Landroidx/compose/foundation/text/input/internal/P0;->n:LO/h;
+
+    .line 13
+    .line 14
+    iget-boolean p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->e:Z
+
+    .line 15
+    .line 16
+    if-nez p1, :cond_0
+
+    .line 17
+    .line 18
+    iget-boolean p1, p0, Landroidx/compose/foundation/text/input/internal/P0;->d:Z
+
+    .line 19
+    .line 20
+    if-eqz p1, :cond_1
+
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :catchall_0
+    move-exception p1
+
+    .line 24
+    goto :goto_1
+
+    .line 25
+    :cond_0
+    :goto_0
+    invoke-virtual {p0}, Landroidx/compose/foundation/text/input/internal/P0;->c()V
+
+    .line 26
+    .line 27
+    .line 28
+    :cond_1
+    sget-object p1, Lkotlin/y;->a:Lkotlin/y;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 29
+    .line 30
+    monitor-exit v0
+
+    .line 31
+    return-void
+
+    .line 32
+    :goto_1
+    monitor-exit v0
+
+    .line 33
+    throw p1
+.end method

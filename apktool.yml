@@ -1,0 +1,137 @@
+version: 2.9.3
+apkFileName: base.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 21
+  targetSdkVersion: 35
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 2700601
+  versionName: 27.6.1
+resourcesAreCompressed: false
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  DebugProbesKt.bin: 8
+  HMSCore-availableupdate.properties: 8
+  HMSCore-base.properties: 8
+  HMSCore-baselegacyapi.properties: 8
+  HMSCore-device.properties: 8
+  HMSCore-hatool.properties: 8
+  HMSCore-log.properties: 8
+  HMSCore-stats.properties: 8
+  HMSCore-ui.properties: 8
+  LICENSE-junit.txt: 8
+  agconnect-core.properties: 8
+  androidsupportmultidexversion.txt: 8
+  firebase-annotations.properties: 8
+  firebase-components.properties: 8
+  firebase-datatransport.properties: 8
+  firebase-encoders-json.properties: 8
+  firebase-encoders-proto.properties: 8
+  firebase-encoders.properties: 8
+  firebase-iid-interop.properties: 8
+  firebase-installations-interop.properties: 8
+  firebase-measurement-connector.properties: 8
+  hamcrest-core-is-deprecated.txt: 8
+  hamcrest-library-is-deprecated.txt: 8
+  interactivemedia.properties: 8
+  kotlin-tooling-metadata.json: 8
+  messaging_event.proto: 8
+  messaging_event_extension.proto: 8
+  network-common.properties: 8
+  network-framework-compat.properties: 8
+  network-grs.properties: 8
+  play-services-ads-identifier.properties: 8
+  play-services-appset.properties: 8
+  play-services-auth-api-phone.properties: 8
+  play-services-base.properties: 8
+  play-services-basement.properties: 8
+  play-services-cast-framework.properties: 8
+  play-services-cast.properties: 8
+  play-services-cloud-messaging.properties: 8
+  play-services-flags.properties: 8
+  play-services-pal.properties: 8
+  play-services-stats.properties: 8
+  play-services-tasks.properties: 8
+  transport-api.properties: 8
+  transport-backend-cct.properties: 8
+  transport-runtime.properties: 8
+  tv-ads.properties: 8
+  com/google/android/apps/common/testing/accessibility/framework/AccessibilityEvaluation.proto: 8
+  com/google/android/apps/common/testing/accessibility/framework/uielement/AccessibilityHierarchy.proto: 8
+  com/google/android/apps/common/testing/accessibility/framework/uielement/AndroidFramework.proto: 8
+  com/sun/jna/aix-ppc/libjnidispatch.a: 8
+  com/sun/jna/aix-ppc64/libjnidispatch.a: 8
+  com/sun/jna/darwin/libjnidispatch.jnilib: 8
+  com/sun/jna/win32-x86-64/jnidispatch.dll: 8
+  com/sun/jna/win32-x86/jnidispatch.dll: 8
+  google/protobuf/any.proto: 8
+  google/protobuf/api.proto: 8
+  google/protobuf/duration.proto: 8
+  google/protobuf/empty.proto: 8
+  google/protobuf/field_mask.proto: 8
+  google/protobuf/source_context.proto: 8
+  google/protobuf/struct.proto: 8
+  google/protobuf/timestamp.proto: 8
+  google/protobuf/type.proto: 8
+  google/protobuf/wrappers.proto: 8
+  junit/runner/logo.gif: 0
+  junit/runner/smalllogo.gif: 0
+  okhttp3/internal/publicsuffix/NOTICE: 8
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: 8
+  org.minidns/version: 8
+  org/pcap4j/pcap4j.properties: 8
+  org/pcap4j/packet/packet.properties: 8
+  resources-ar/strings.xml: 8
+  resources-b+es+419/strings.xml: 8
+  resources-bg/strings.xml: 8
+  resources-ca/strings.xml: 8
+  resources-cs/strings.xml: 8
+  resources-da/strings.xml: 8
+  resources-de/strings.xml: 8
+  resources-el/strings.xml: 8
+  resources-en-rGB/strings.xml: 8
+  resources-es/strings.xml: 8
+  resources-fi/strings.xml: 8
+  resources-fil/strings.xml: 8
+  resources-fr/strings.xml: 8
+  resources-hi/strings.xml: 8
+  resources-hr/strings.xml: 8
+  resources-hu/strings.xml: 8
+  resources-id/strings.xml: 8
+  resources-it/strings.xml: 8
+  resources-iw/strings.xml: 8
+  resources-ja/strings.xml: 8
+  resources-ko/strings.xml: 8
+  resources-lt/strings.xml: 8
+  resources-lv/strings.xml: 8
+  resources-nl/strings.xml: 8
+  resources-no/strings.xml: 8
+  resources-pl/strings.xml: 8
+  resources-pt-rBR/strings.xml: 8
+  resources-pt-rPT/strings.xml: 8
+  resources-ro/strings.xml: 8
+  resources-ru/strings.xml: 8
+  resources-sk/strings.xml: 8
+  resources-sl/strings.xml: 8
+  resources-sr/strings.xml: 8
+  resources-sv/strings.xml: 8
+  resources-th/strings.xml: 8
+  resources-tr/strings.xml: 8
+  resources-uk/strings.xml: 8
+  resources-vi/strings.xml: 8
+  resources-zh-rCN/strings.xml: 8
+  resources-zh-rTW/strings.xml: 8
+  resources/strings.xml: 8
+doNotCompress:
+- resources.arsc
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm
+- png

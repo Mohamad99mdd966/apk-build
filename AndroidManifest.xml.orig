@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" package="com.farsitel.bazaar" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <permission android:description="@string/pardakht_perm_payThroughBazaar_desc" android:label="@string/pardakht_perm_payThroughBazaar_lab" android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.UPDATE_PACKAGES_WITHOUT_USER_ACTION"/>
+    <uses-permission android:name="android.permission.ENFORCE_UPDATE_OWNERSHIP"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <permission android:description="@string/referrer_ThroughBazaar_desc" android:label="@string/referrer_ThroughBazaar_lab" android:name="com.farsitel.bazaar.permission.REFERRER" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.REFERRER"/>
+    <permission android:name="com.farsitel.bazaar.GAME_HUB_PERMISSION" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.AD_SERVICES_CONFIG"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <package android:name="androidx.test.orchestrator"/>
+        <package android:name="androidx.test.services"/>
+        <package android:name="com.google.android.apps.common.testing.services"/>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice"/>
+        </intent>
+        <intent>
+            <action android:name="com.huawei.hms.core"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.farsitel.bazaar.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.farsitel.bazaar.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    <permission android:name="com.farsitel.bazaar.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    <permission android:name="com.farsitel.bazaar.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PUSH_PROVIDER"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/ic_banner_old" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.farsitel.bazaar.BazaarApp" android:networkSecurityConfig="@xml/bazaar_network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:taskAffinity="" android:theme="@style/Theme.Bazaar.Primary">
+        <profileable android:enabled="false" android:shell="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.farsitel.bazaar.MainActivity" android:theme="@style/Theme.Bazaar.Primary.Launcher" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.splashscreen.launcher"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="cafebazaar.ir"/>
+                <data android:host="www.cafebazaar.ir"/>
+                <data android:pathPrefix="/catslist"/>
+                <data android:pathPattern="/cat/.*"/>
+                <data android:pathPattern="/lists/.*"/>
+                <data android:pathPattern="/pages/.*"/>
+                <data android:pathPrefix="/app/"/>
+                <data android:pathPrefix="/developer/"/>
+                <data android:pathPattern="/game/.*"/>
+                <data android:pathPattern="/search"/>
+                <data android:pathPattern="/balance"/>
+                <data android:pathPattern="/subscriptions"/>
+                <data android:pathPattern="/promoted_subscription"/>
+                <data android:pathPattern="/myreviews"/>
+                <data android:pathPattern="/loyalty_club/.*"/>
+                <data android:pathPattern="/mini_game"/>
+                <data android:pathPattern="/mini_game_leaderboard"/>
+                <data android:pathPattern="/web_page"/>
+                <data android:pathPattern="/direct_debit"/>
+                <data android:pathPattern="/suggested_reviews"/>
+                <data android:pathPattern="/badge_missions"/>
+                <data android:pathPattern="/badge"/>
+                <data android:pathPattern="/reels"/>
+                <data android:pathPattern="/tournament_history"/>
+                <data android:pathPattern="/tournament_rule"/>
+                <data android:pathPattern="/tournament_leaderboard"/>
+                <data android:pathPattern="/event_details"/>
+                <data android:pathPattern="/magazine_article"/>
+                <data android:pathPattern="/magazine"/>
+                <data android:pathPattern="/video"/>
+                <data android:pathPrefix="/video/"/>
+                <data android:pathPattern="/filtered_commodities"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="*.cafebazaar.ir"/>
+                <data android:host="cafebazaar.ir"/>
+                <data android:pathPrefix="/app/"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.RUN"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="market"/>
+                <data android:host="details"/>
+                <data android:host="search"/>
+                <data android:pathPattern=".*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.RUN"/>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:path=""/>
+                <data android:host="appinfo"/>
+                <data android:host="apps"/>
+                <data android:host="badge"/>
+                <data android:host="badge_missions"/>
+                <data android:host="balance"/>
+                <data android:host="cat"/>
+                <data android:host="catslist"/>
+                <data android:host="collection"/>
+                <data android:host="details"/>
+                <data android:host="direct_debit"/>
+                <data android:host="downloads"/>
+                <data android:host="edit_avatar_direct"/>
+                <data android:host="enable_bazaar_kids"/>
+                <data android:host="event_details"/>
+                <data android:host="feedback"/>
+                <data android:host="finalize_payman"/>
+                <data android:host="home"/>
+                <data android:host="installed"/>
+                <data android:host="loyalty_club"/>
+                <data android:host="magazine_article"/>
+                <data android:host="main"/>
+                <data android:host="malicious"/>
+                <data android:host="mini_game"/>
+                <data android:host="mini_game_leaderboard"/>
+                <data android:host="my_bazaar"/>
+                <data android:host="myreviews"/>
+                <data android:host="notes"/>
+                <data android:host="onboarding"/>
+                <data android:host="page"/>
+                <data android:host="payman_on_boarding"/>
+                <data android:host="profile"/>
+                <data android:host="profile_direct"/>
+                <data android:host="review_reply"/>
+                <data android:host="search"/>
+                <data android:host="settings"/>
+                <data android:host="subscriptions"/>
+                <data android:host="promoted_subscription"/>
+                <data android:host="suggested_reviews"/>
+                <data android:host="support"/>
+                <data android:host="terms"/>
+                <data android:host="tournament_history"/>
+                <data android:host="tournament_leaderboard"/>
+                <data android:host="tournament_rule"/>
+                <data android:host="upgradable"/>
+                <data android:host="vpn" android:pathPrefix="/packageName/"/>
+                <data android:host="web_page"/>
+                <data android:host="player"/>
+                <data android:host="content_details"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.main.launcher"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.farsitel.bazaar.postcomment.ThirdPartyReviewActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:scheme="market"/>
+                <data android:host="details"/>
+                <data android:pathPattern=".*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:exported="true" android:name="com.farsitel.bazaar.player.view.VideoPlayerActivity" android:screenOrientation="locked" android:theme="@style/Theme.Bazaar.VideoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:host="player_internal"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.farsitel.bazaar.appdetails.view.thirdparty.ThirdPartyAppDetailActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="details" android:path="/modal" android:scheme="bazaar"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.farsitel.bazaar.checkupdate.view.ThirdPartyAutoUpdateRequestActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="autoupdate" android:path="/modal" android:scheme="bazaar"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.farsitel.bazaar.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.installedapps.receiver.PackageChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.installedapps.receiver.BazaarPackageUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.farsitel.bazaar.core.pushnotification.fcm.BazaarFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="push_kit_auto_init_enabled" android:value="true"/>
+        <provider android:authorities="com.farsitel.bazaar.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_bazaar_notification_old"/>
+        <service android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.checkupdate.service.UpdateCheckService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.service.UpdateCheckService.BIND"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.checkupdate.service.AutoUpdateCheckService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.service.AutoUpdateCheckService.BIND"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.farsitel.bazaar.customtab.KeepAliveService"/>
+        <meta-data android:name="io.sentry.dsn" android:value="https://5d4f5736459d4c07a095cb460d46c30d@sentry.cafebazaar.org/50"/>
+        <meta-data android:name="io.sentry.ndk.enable" android:value="false"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|uiMode" android:name="com.farsitel.bazaar.minigame.view.MiniGameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Bazaar.Primary.WebPage"/>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.upgradableapp.work.GetUpgradableAppsBroadCastReceiver">
+            <intent-filter>
+                <action android:name="introduceDeviceAndGetAppConfigReady"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.myreview.receiver.LoginReceiver">
+            <intent-filter>
+                <action android:name="loginHappened"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.myreview.receiver.LogoutReceiver">
+            <intent-filter>
+                <action android:name="logoutHappened"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="shortService" android:name="com.farsitel.bazaar.downloadedapp.service.DeleteDownloadedAppsService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.downloadedapp.service.DELETE_DOWNLOADED_APPS"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.farsitel.bazaar.scheduleupdate.alarmmanager.ScheduleStartUpdateAlarmReceiver"/>
+        <receiver android:name="com.farsitel.bazaar.scheduleupdate.alarmmanager.ScheduleStopUpdateAlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.farsitel.bazaar.scheduleupdate.alarmmanager.ScheduleBootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <service android:exported="true" android:foregroundServiceType="specialUse" android:name="com.farsitel.bazaar.vpn.service.BazaarVpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="VPN"/>
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+            <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="false"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.farsitel.bazaar.download.service.InstallService">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="bazaar_download_and_install_apps"/>
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.DOWNLOAD"/>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.STOP_APP"/>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.BATCH_DOWNLOAD"/>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.STOP_ALL"/>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.SCHEDULED_BATCH_DOWNLOAD"/>
+                <action android:name="com.farsitel.bazaar.download.service.InstallService.launcher.cancel_install_action"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.farsitel.bazaar.install.notification.NotificationActionActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent"/>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.install.receiver.DownloadNotificationActionReceiver">
+            <intent-filter>
+                <action android:name="notificationDelete"/>
+                <action android:name="notificationCancel"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.farsitel.bazaar.login.view.activity.LoginActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:host="login"/>
+                <data android:path=""/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.login.default"/>
+                <action android:name="com.farsitel.bazaar.login.inAppPurchase"/>
+                <action android:name="com.farsitel.bazaar.login.inAppReview"/>
+                <action android:name="com.farsitel.bazaar.login.mergeAccount"/>
+                <action android:name="com.farsitel.bazaar.login.inAppLogin"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.farsitel.bazaar.login.receiver.SmsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+                <action android:name="com.huawei.hms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleInstance" android:name="com.farsitel.bazaar.inappbilling.view.InAppBillingCheckerActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent"/>
+        <service android:exported="true" android:name="com.farsitel.bazaar.inappbilling.service.InAppBillingService">
+            <intent-filter>
+                <action android:name="ir.cafebazaar.pardakht.InAppBillingService.BIND"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.farsitel.bazaar.inappbilling.receiver.InAppBillingReceiver">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.ping"/>
+                <action android:name="com.farsitel.bazaar.purchase"/>
+                <action android:name="com.farsitel.bazaar.getPurchase"/>
+                <action android:name="com.farsitel.bazaar.billingSupport"/>
+                <action android:name="com.farsitel.bazaar.skuDetail"/>
+                <action android:name="com.farsitel.bazaar.consume"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.farsitel.bazaar.payment.PaymentInitActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.payment.in_app"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="bazaar"/>
+                <data android:host="in_app"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.farsitel.bazaar.payment.PaymentActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:host="continue_payment_flow"/>
+                <data android:path=""/>
+                <data android:host="paymentDone"/>
+                <data android:host="paymentFailure"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.payment.pay"/>
+                <action android:name="com.farsitel.bazaar.payment.credit"/>
+                <action android:name="com.farsitel.bazaar.payment.giftCard"/>
+                <action android:name="com.farsitel.bazaar.payment.onBoarding"/>
+                <action android:name="com.farsitel.bazaar.payment.directDebitInfo"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.referrerprovider.ReferrerProviderServiceImpl">
+            <intent-filter>
+                <action android:name="com.cafebazaar.referrer.BIND"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.farsitel.bazaar.referrerprovider.ReferrerProviderReceiver">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.referrer.get"/>
+                <action android:name="com.farsitel.bazaar.referrer.consume"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.account.receiver.LogoutReceiver">
+            <intent-filter>
+                <action android:name="logoutHappened"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.common.bookmark.receiver.LoginReceiver">
+            <intent-filter>
+                <action android:name="loginHappened"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleInstance" android:name="com.farsitel.bazaar.obb.permission.api30.Api32AndLowerObbPermissionActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent"/>
+        <activity android:launchMode="singleInstance" android:name="com.farsitel.bazaar.obb.permission.api31.Api33ObbPermissionActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent"/>
+        <activity android:exported="true" android:name="com.farsitel.bazaar.inapplogin.view.InAppLoginActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent">
+            <intent-filter>
+                <action android:name="ir.cafebazaar.intent.action.IAL"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bazaar"/>
+                <data android:host="inapplogin"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.farsitel.bazaar.inapplogin.service.InAppLoginService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.InAppLogin.BIND"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.inapplogin.service.LoginCheckService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.service.LoginCheckService.BIND"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.farsitel.bazaar.inapplogin.service.InAppStorageService">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.InAppStorage.BIND"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.inapplogin.receiver.InAppLoginReceiver">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.lastAccount"/>
+                <action android:name="com.farsitel.bazaar.getInAppData"/>
+                <action android:name="com.farsitel.bazaar.setInAppData"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenLayout|screenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.farsitel.bazaar.webpage.view.WebPageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Bazaar.Primary.WebPage"/>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.webpage.webview.WebNotificationActionReceiver">
+            <intent-filter>
+                <action android:name="notificationCancel"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.game.GameHubService" android:permission="com.farsitel.bazaar.GAME_HUB_PERMISSION">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.Game.BIND"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.farsitel.bazaar.game.GameHubBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.farsitel.bazaar.startTournamentMatch"/>
+                <action android:name="com.farsitel.bazaar.endTournamentMatch"/>
+                <action android:name="com.farsitel.bazaar.getTournamentTimes"/>
+                <action android:name="com.farsitel.bazaar.isLogin"/>
+                <action android:name="com.farsitel.bazaar.getCurrentLeaderboardData"/>
+                <action android:name="com.farsitel.bazaar.getLeaderboardData"/>
+                <action android:name="com.farsitel.bazaar.getEventsByPackageName"/>
+                <action android:name="com.farsitel.bazaar.eventDoneNotify"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.farsitel.bazaar.core.pushnotification.hms.BazaarHmsMessagingService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.core.receiver.LogoutReceiver">
+            <intent-filter>
+                <action android:name="logoutHappened"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.farsitel.bazaar.voice.service.MusicService">
+            <intent-filter>
+                <action android:name="androidx.media3.session.MediaSessionService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.farsitel.bazaar.notification.click.PushNotificationActionActivity" android:theme="@style/Theme.Bazaar.Primary.Transparent"/>
+        <receiver android:exported="false" android:name="com.farsitel.bazaar.notification.receiver.NotificationActionReceiver">
+            <intent-filter>
+                <action android:name="notificationDelete"/>
+                <action android:name="notificationCancel"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <activity android:exported="false" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:theme="@style/Theme.AppCompat.NoActionBar.Translucent"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.farsitel.bazaar.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.farsitel.bazaar.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.farsitel.bazaar.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:configChanges="fontScale|uiMode" android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:hwid" android:value="hwid:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:hwid" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:hwid:account" android:value="13"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-identifier" android:value="ads-identifier:3.4.56.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:pps-phone:adsbrainkit" android:value="1"/>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.farsitel.bazaar.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:exported="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.farsitel.bazaar.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.farsitel.bazaar.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:readPermission="com.farsitel.bazaar.permission.PUSH_PROVIDER" android:writePermission="com.farsitel.bazaar.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <activity android:exported="false" android:name="com.huawei.hms.support.api.push.TransActivity"/>
+        <provider android:authorities="com.farsitel.bazaar.aaidinitprovider" android:exported="false" android:initOrder="500" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.7.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.6.0.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <meta-data android:name="availableLoaded" android:value="yes"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.farsitel.bazaar.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=102741671"/>
+    </application>
+</manifest>

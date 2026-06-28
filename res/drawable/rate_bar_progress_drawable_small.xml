@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap android:src="@drawable/ic_star_outline_empty_small_old" android:tint="@color/icon_hint_color" />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <bitmap android:src="@drawable/ic_star_outline_empty_small_old" android:tint="@color/icon_hint_color" />
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap android:src="@drawable/ic_star_outline_fill_small_old" android:tint="@color/app_brand_primary" />
+    </item>
+</layer-list>

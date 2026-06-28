@@ -1,0 +1,28 @@
+.class public final Lw2/g;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static a:I = 0x7f0b003d
+
+.field public static b:I = 0x7f0b003e
+
+.field public static c:I = 0x7f0b003f
+
+.field public static d:I = 0x7f0b0040
+
+.field public static e:I = 0x7f0b0041
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

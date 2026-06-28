@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen" parent="@style/Base.v27.Theme.SplashScreen" />
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v27.Theme.SplashScreen.Light" />
+    <style name="Theme.Bazaar.BottomSheetDialog.Custom.Transparent" parent="@style/Theme.V27.Bazaar.BottomSheetDialog.Custom.Transparent">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="enableEdgeToEdge">true</item>
+    </style>
+    <style name="Theme.Bazaar.Primary" parent="@style/Theme.V27.Bazaar.Primary" />
+    <style name="Theme.Bazaar.VideoActivity" parent="@style/Theme.V27.Bazaar.Primary">
+        <item name="android:navigationBarColor">#ff000000</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen" parent="@style/Base.v21.Theme.SplashScreen">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen.Light" parent="@style/Base.v21.Theme.SplashScreen.Light">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Theme.V27.Bazaar.BottomSheetDialog.Custom.Transparent" parent="@style/Theme.Bazaar.BottomSheetDialog.Custom">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/surface_color_0</item>
+    </style>
+    <style name="Theme.V27.Bazaar.Primary" parent="@style/Theme.V23.Bazaar.Primary">
+        <item name="android:navigationBarColor">@color/surface_color_0</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

@@ -1,0 +1,171 @@
+.class public final Lorg/junit/experimental/max/MaxHistory$b;
+.super LFj/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lorg/junit/experimental/max/MaxHistory;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x11
+    name = "b"
+.end annotation
+
+
+# instance fields
+.field public a:J
+
+.field public b:Ljava/util/Map;
+
+.field public final synthetic c:Lorg/junit/experimental/max/MaxHistory;
+
+
+# direct methods
+.method private constructor <init>(Lorg/junit/experimental/max/MaxHistory;)V
+    .locals 2
+
+    .line 1
+    iput-object p1, p0, Lorg/junit/experimental/max/MaxHistory$b;->c:Lorg/junit/experimental/max/MaxHistory;
+
+    invoke-direct {p0}, LFj/a;-><init>()V
+
+    .line 2
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    iput-wide v0, p0, Lorg/junit/experimental/max/MaxHistory$b;->a:J
+
+    .line 3
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lorg/junit/experimental/max/MaxHistory$b;->b:Ljava/util/Map;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lorg/junit/experimental/max/MaxHistory;Lorg/junit/experimental/max/MaxHistory$a;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0, p1}, Lorg/junit/experimental/max/MaxHistory$b;-><init>(Lorg/junit/experimental/max/MaxHistory;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public b(Lorg/junit/runner/notification/Failure;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lorg/junit/experimental/max/MaxHistory$b;->c:Lorg/junit/experimental/max/MaxHistory;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lorg/junit/runner/notification/Failure;->getDescription()Lorg/junit/runner/Description;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    iget-wide v1, p0, Lorg/junit/experimental/max/MaxHistory$b;->a:J
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1, v1, v2}, Lorg/junit/experimental/max/MaxHistory;->putTestFailureTimestamp(Lorg/junit/runner/Description;J)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public c(Lorg/junit/runner/Description;)V
+    .locals 5
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    iget-object v2, p0, Lorg/junit/experimental/max/MaxHistory$b;->b:Ljava/util/Map;
+
+    .line 6
+    .line 7
+    invoke-interface {v2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v2
+
+    .line 11
+    check-cast v2, Ljava/lang/Long;
+
+    .line 12
+    .line 13
+    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide v2
+
+    .line 17
+    iget-object v4, p0, Lorg/junit/experimental/max/MaxHistory$b;->c:Lorg/junit/experimental/max/MaxHistory;
+
+    .line 18
+    .line 19
+    sub-long/2addr v0, v2
+
+    .line 20
+    invoke-virtual {v4, p1, v0, v1}, Lorg/junit/experimental/max/MaxHistory;->putTestDuration(Lorg/junit/runner/Description;J)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+.method public e(Lorg/junit/runner/Description;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lorg/junit/experimental/max/MaxHistory$b;->b:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    invoke-static {}, Ljava/lang/System;->nanoTime()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method

@@ -1,0 +1,42 @@
+.class public final synthetic Lcom/farsitel/bazaar/directdebit/nationalid/view/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;
+
+.field public final synthetic b:LB6/d;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;LB6/d;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/farsitel/bazaar/directdebit/nationalid/view/b;->a:Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;
+
+    iput-object p2, p0, Lcom/farsitel/bazaar/directdebit/nationalid/view/b;->b:LB6/d;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/farsitel/bazaar/directdebit/nationalid/view/b;->a:Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;
+
+    iget-object v1, p0, Lcom/farsitel/bazaar/directdebit/nationalid/view/b;->b:LB6/d;
+
+    invoke-static {v0, v1, p1}, Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;->L2(Lcom/farsitel/bazaar/directdebit/nationalid/view/NationalIdFragment;LB6/d;Landroid/view/View;)V
+
+    return-void
+.end method

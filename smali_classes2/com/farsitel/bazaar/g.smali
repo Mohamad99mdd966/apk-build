@@ -1,0 +1,135 @@
+.class public abstract Lcom/farsitel/bazaar/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/farsitel/bazaar/appdetails/view/j;
+.implements Lcom/farsitel/bazaar/appdetails/view/p;
+.implements Lcom/farsitel/bazaar/article/view/d;
+.implements Lcom/farsitel/bazaar/avatar/view/j;
+.implements Lcom/farsitel/bazaar/avatar/view/o;
+.implements Lcom/farsitel/bazaar/avatar/view/q;
+.implements Lcom/farsitel/bazaar/badge/view/a;
+.implements Lcom/farsitel/bazaar/badge/view/e;
+.implements Lcom/farsitel/bazaar/birthdate/view/b;
+.implements Lcom/farsitel/bazaar/boughtapp/view/a;
+.implements Lcom/farsitel/bazaar/checkupdate/view/b;
+.implements Lcom/farsitel/bazaar/directdebit/banklist/view/b;
+.implements Lcom/farsitel/bazaar/directdebit/info/view/a;
+.implements Lcom/farsitel/bazaar/directdebit/moreinfo/view/a;
+.implements Lcom/farsitel/bazaar/directdebit/nationalid/view/d;
+.implements Lcom/farsitel/bazaar/directdebit/onboarding/view/d;
+.implements Lcom/farsitel/bazaar/discountcode/view/a;
+.implements Lcom/farsitel/bazaar/downloadedapp/view/a;
+.implements Lcom/farsitel/bazaar/editorchoice/view/b;
+.implements Lcom/farsitel/bazaar/feature/bookmark/view/b;
+.implements Lcom/farsitel/bazaar/feature/content/detail/view/a;
+.implements Lcom/farsitel/bazaar/feature/fehrest/view/c;
+.implements Lcom/farsitel/bazaar/feature/fehrest/view/g;
+.implements Lcom/farsitel/bazaar/forceupdate/view/c;
+.implements Lcom/farsitel/bazaar/gamehubevent/view/a;
+.implements Lcom/farsitel/bazaar/gender/view/a;
+.implements Lcom/farsitel/bazaar/giftcard/view/b;
+.implements Lcom/farsitel/bazaar/inapplogin/view/i;
+.implements Lcom/farsitel/bazaar/installedapps/view/a;
+.implements Lcom/farsitel/bazaar/kids/view/f;
+.implements Lcom/farsitel/bazaar/kids/view/g;
+.implements Lcom/farsitel/bazaar/login/view/fragment/g;
+.implements Lcom/farsitel/bazaar/login/view/fragment/k;
+.implements Lcom/farsitel/bazaar/login/view/fragment/m;
+.implements Lcom/farsitel/bazaar/login/view/fragment/q;
+.implements Lcom/farsitel/bazaar/login/view/fragment/s;
+.implements Lcom/farsitel/bazaar/loyaltyclub/activation/view/c;
+.implements Lcom/farsitel/bazaar/loyaltyclub/detail/view/j;
+.implements Lcom/farsitel/bazaar/loyaltyclub/earnpoint/view/a;
+.implements Lcom/farsitel/bazaar/loyaltyclub/gifts/view/a;
+.implements Lcom/farsitel/bazaar/loyaltyclub/history/view/c;
+.implements Lcom/farsitel/bazaar/loyaltyclub/info/view/b;
+.implements Lcom/farsitel/bazaar/loyaltyclub/spendpoint/view/b;
+.implements Lcom/farsitel/bazaar/loyaltyclub/userleveling/view/d;
+.implements Lcom/farsitel/bazaar/loyaltyclub/userleveling/view/g;
+.implements Lcom/farsitel/bazaar/loyaltyclubspendingpoint/view/d;
+.implements Lcom/farsitel/bazaar/loyaltyclubspendingpoint/view/h;
+.implements Lcom/farsitel/bazaar/magazine/detail/view/b;
+.implements Lcom/farsitel/bazaar/magazine/home/view/e;
+.implements Lcom/farsitel/bazaar/magazine/home/view/f;
+.implements Lcom/farsitel/bazaar/magazine/home/view/i;
+.implements Lcom/farsitel/bazaar/minigame/view/f;
+.implements Lcom/farsitel/bazaar/minigame/view/j;
+.implements Lcom/farsitel/bazaar/minigame/view/l;
+.implements Lcom/farsitel/bazaar/mybazaar/view/c;
+.implements Lcom/farsitel/bazaar/myreview/view/i;
+.implements Lcom/farsitel/bazaar/myreview/view/l;
+.implements Lcom/farsitel/bazaar/myreview/view/n;
+.implements Lcom/farsitel/bazaar/nickname/view/c;
+.implements Lcom/farsitel/bazaar/notificationcenter/view/c;
+.implements Lcom/farsitel/bazaar/onboarding/view/b;
+.implements Lcom/farsitel/bazaar/page/view/b;
+.implements Lcom/farsitel/bazaar/page/view/g;
+.implements Lcom/farsitel/bazaar/payment/addgiftcard/d;
+.implements Lcom/farsitel/bazaar/payment/credit/o;
+.implements Lcom/farsitel/bazaar/payment/discount/f;
+.implements Lcom/farsitel/bazaar/payment/gateway/c;
+.implements Lcom/farsitel/bazaar/payment/options/p;
+.implements Lcom/farsitel/bazaar/payment/starter/h;
+.implements Lcom/farsitel/bazaar/payment/thanks/f;
+.implements Lcom/farsitel/bazaar/payment/trialsubinfo/e;
+.implements Lcom/farsitel/bazaar/payment/web/f;
+.implements Lcom/farsitel/bazaar/postcomment/view/h;
+.implements Lcom/farsitel/bazaar/postcomment/view/i;
+.implements Lcom/farsitel/bazaar/postpaid/view/i;
+.implements Lcom/farsitel/bazaar/postpaid/view/j;
+.implements Lcom/farsitel/bazaar/postpaid/view/n;
+.implements Lcom/farsitel/bazaar/profile/view/fragment/b;
+.implements Lcom/farsitel/bazaar/readytoinstall/view/b;
+.implements Lcom/farsitel/bazaar/reels/view/e;
+.implements Lcom/farsitel/bazaar/releasenote/view/c;
+.implements Lcom/farsitel/bazaar/releasenote/view/d;
+.implements Lcom/farsitel/bazaar/review/view/f;
+.implements Lcom/farsitel/bazaar/review/view/m;
+.implements Lcom/farsitel/bazaar/scheduleupdate/view/a;
+.implements Lcom/farsitel/bazaar/scheduleupdate/view/d;
+.implements Lcom/farsitel/bazaar/scheduleupdate/view/permission/a;
+.implements Lcom/farsitel/bazaar/search/view/fragment/c;
+.implements Lcom/farsitel/bazaar/search/view/fragment/e;
+.implements Lcom/farsitel/bazaar/securityshield/view/fragment/a;
+.implements Lcom/farsitel/bazaar/sessionmanagement/view/e;
+.implements Lcom/farsitel/bazaar/setting/view/h;
+.implements Lcom/farsitel/bazaar/setting/view/j;
+.implements Lcom/farsitel/bazaar/softupdate/view/d;
+.implements Lcom/farsitel/bazaar/story/view/g;
+.implements Lcom/farsitel/bazaar/story/view/k;
+.implements Lcom/farsitel/bazaar/subscription/view/i;
+.implements Lcom/farsitel/bazaar/subscription/view/m;
+.implements Lcom/farsitel/bazaar/subscription/view/promoted/d;
+.implements Lcom/farsitel/bazaar/tournament/view/d;
+.implements Lcom/farsitel/bazaar/tournament/view/f;
+.implements Lcom/farsitel/bazaar/tournament/view/h;
+.implements Lcom/farsitel/bazaar/transaction/view/b;
+.implements Lcom/farsitel/bazaar/upgradableapp/view/b;
+.implements Lcom/farsitel/bazaar/userprofile/e;
+.implements Lcom/farsitel/bazaar/view/h;
+.implements Lcom/farsitel/bazaar/view/i;
+.implements Lcom/farsitel/bazaar/voice/view/c;
+.implements Lcom/farsitel/bazaar/vpnclient/i;
+.implements Lcom/farsitel/bazaar/wallet/view/b;
+.implements Lcom/farsitel/bazaar/webpage/view/v;
+.implements Lcom/farsitel/bazaar/webpage/view/directwebview/g;
+.implements Lcom/farsitel/content/launcher/c;
+.implements LSh/c;
+.implements LWh/a$b;
+.implements LZh/a;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method

@@ -1,0 +1,267 @@
+.class public final Lcom/farsitel/bazaar/payment/credit/a;
+.super Landroidx/recyclerview/widget/RecyclerView$Adapter;
+.source "SourceFile"
+
+
+# instance fields
+.field public final d:Ljava/util/List;
+
+.field public final e:Lti/l;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;Lti/l;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/farsitel/bazaar/payment/model/CreditOption;",
+            ">;",
+            "Lti/l;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "items"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "onItemClicked"
+
+    .line 7
+    .line 8
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$Adapter;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object p1, p0, Lcom/farsitel/bazaar/payment/credit/a;->d:Ljava/util/List;
+
+    .line 15
+    .line 16
+    iput-object p2, p0, Lcom/farsitel/bazaar/payment/credit/a;->e:Lti/l;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic A(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$D;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lcom/farsitel/bazaar/payment/credit/a;->L(Landroid/view/ViewGroup;I)Lcom/farsitel/bazaar/payment/credit/c;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic F(Landroidx/recyclerview/widget/RecyclerView$D;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/farsitel/bazaar/payment/credit/c;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/farsitel/bazaar/payment/credit/a;->M(Lcom/farsitel/bazaar/payment/credit/c;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public K(Lcom/farsitel/bazaar/payment/credit/c;I)V
+    .locals 1
+
+    .line 1
+    const-string v0, "holder"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lcom/farsitel/bazaar/payment/credit/a;->d:Ljava/util/List;
+
+    .line 7
+    .line 8
+    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p2
+
+    .line 12
+    check-cast p2, Lcom/farsitel/bazaar/payment/model/CreditOption;
+
+    .line 13
+    .line 14
+    invoke-virtual {p1, p2}, Lcom/farsitel/bazaar/payment/credit/c;->Q(Lcom/farsitel/bazaar/payment/model/CreditOption;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public L(Landroid/view/ViewGroup;I)Lcom/farsitel/bazaar/payment/credit/c;
+    .locals 2
+
+    .line 1
+    const-string p2, "parent"
+
+    .line 2
+    .line 3
+    invoke-static {p1, p2}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance p2, Lcom/farsitel/bazaar/payment/credit/c;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    const/4 v1, 0x0
+
+    .line 17
+    invoke-static {v0, p1, v1}, LGa/k;->U(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)LGa/k;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    const-string v0, "inflate(...)"
+
+    .line 22
+    .line 23
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object v0, p0, Lcom/farsitel/bazaar/payment/credit/a;->e:Lti/l;
+
+    .line 27
+    .line 28
+    invoke-direct {p2, p1, v0}, Lcom/farsitel/bazaar/payment/credit/c;-><init>(LGa/k;Lti/l;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p2
+.end method
+
+.method public M(Lcom/farsitel/bazaar/payment/credit/c;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "holder"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/16 v0, 0x13
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Lcom/farsitel/bazaar/device/model/DeviceUtilsKt;->isApiLevelAndUp(I)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {p1}, Lcom/farsitel/bazaar/payment/credit/c;->R()V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+.end method
+
+.method public i()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/farsitel/bazaar/payment/credit/a;->d:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public bridge synthetic y(Landroidx/recyclerview/widget/RecyclerView$D;I)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/farsitel/bazaar/payment/credit/c;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lcom/farsitel/bazaar/payment/credit/a;->K(Lcom/farsitel/bazaar/payment/credit/c;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

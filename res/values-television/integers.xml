@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="banner_category_span_count">2</integer>
+    <integer name="compose_list_span_size">24</integer>
+    <integer name="item_count_promo">3</integer>
+    <integer name="single_reels_span_count">2</integer>
+</resources>

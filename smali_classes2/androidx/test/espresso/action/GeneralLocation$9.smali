@@ -1,0 +1,57 @@
+.class final enum Landroidx/test/espresso/action/GeneralLocation$9;
+.super Landroidx/test/espresso/action/GeneralLocation;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/test/espresso/action/GeneralLocation;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x4011
+    name = null
+.end annotation
+
+
+# direct methods
+.method private constructor <init>(Ljava/lang/String;I)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, p2, v0}, Landroidx/test/espresso/action/GeneralLocation;-><init>(Ljava/lang/String;ILandroidx/test/espresso/action/GeneralLocation-IA;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;ILandroidx/test/espresso/action/GeneralLocation$9-IA;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Landroidx/test/espresso/action/GeneralLocation$9;-><init>(Ljava/lang/String;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public calculateCoordinates(Landroid/view/View;)[F
+    .locals 1
+
+    .line 1
+    sget-object v0, Landroidx/test/espresso/action/GeneralLocation$Position;->END:Landroidx/test/espresso/action/GeneralLocation$Position;
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0, v0}, Landroidx/test/espresso/action/GeneralLocation;->-$$Nest$smgetCoordinates(Landroid/view/View;Landroidx/test/espresso/action/GeneralLocation$Position;Landroidx/test/espresso/action/GeneralLocation$Position;)[F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method

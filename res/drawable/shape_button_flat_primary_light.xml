@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/shape_text_rounded_light_gray_background" />
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/grey_40" />
+            <solid android:color="@color/color_disable" />
+            <corners android:radius="@dimen/light_radius" />
+        </shape>
+    </item>
+</selector>

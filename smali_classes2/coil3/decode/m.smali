@@ -1,0 +1,30 @@
+.class public final synthetic Lcoil3/decode/m;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcoil3/decode/p;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;Lqj/f;)Z
+    .locals 0
+
+    .line 1
+    invoke-static {p1, p2}, Lcoil3/decode/o;->c(Ljava/lang/String;Lqj/f;)Z
+
+    move-result p1
+
+    return p1
+.end method

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat" />
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light" />
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar" />
+    <style name="Bazaar.Button.TimePicker" parent="@style/Bazaar.Button">
+        <item name="android:textSize">@dimen/headline2</item>
+        <item name="android:background">@drawable/selector_button_flat_primary_light</item>
+        <item name="android:minWidth">@dimen/time_picker_min_width</item>
+        <item name="android:paddingHorizontal">@dimen/default_margin_double</item>
+        <item name="android:paddingVertical">@dimen/default_margin</item>
+    </style>
+    <style name="Bazaar.Text.Caption.SecondaryVitrin" parent="@style/Bazaar.Text.Caption">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">30.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:minLines">1</item>
+        <item name="android:autoSizeMinTextSize">@dimen/secondary_vitrin_font_size</item>
+        <item name="android:autoSizeMaxTextSize">@dimen/tiny_font_size</item>
+        <item name="autoSizeTextType">uniform</item>
+    </style>
+    <style name="Theme.Bazaar.Primary.WebPage" parent="@style/Theme.Bazaar.Primary">
+        <item name="android:windowBackground">@color/surface_color_0</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:colorPrimaryDark">@color/black_primary</item>
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

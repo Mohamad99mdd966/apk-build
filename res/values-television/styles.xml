@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Bazaar.ZoomEffect" parent="@style/Bazaar">
+        <item name="android:padding">@dimen/default_margin</item>
+        <item name="android:stateListAnimator">@animator/selector_zoom</item>
+    </style>
+</resources>

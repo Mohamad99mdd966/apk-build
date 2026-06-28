@@ -1,0 +1,8 @@
+.class public interface abstract Lg5/b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Lcom/farsitel/bazaar/badge/model/BadgeInfoItem;I)V
+.end method

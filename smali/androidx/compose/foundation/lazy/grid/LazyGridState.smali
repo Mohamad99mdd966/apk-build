@@ -1,0 +1,1942 @@
+.class public final Landroidx/compose/foundation/lazy/grid/LazyGridState;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroidx/compose/foundation/gestures/C;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroidx/compose/foundation/lazy/grid/LazyGridState$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final x:Landroidx/compose/foundation/lazy/grid/LazyGridState$a;
+
+.field public static final y:LM/w;
+
+
+# instance fields
+.field public final a:Landroidx/compose/foundation/lazy/grid/w;
+
+.field public b:Z
+
+.field public c:Landroidx/compose/foundation/lazy/grid/p;
+
+.field public final d:Landroidx/compose/foundation/lazy/grid/z;
+
+.field public final e:Landroidx/compose/runtime/E0;
+
+.field public final f:Landroidx/compose/foundation/interaction/i;
+
+.field public g:F
+
+.field public final h:Landroidx/compose/foundation/gestures/C;
+
+.field public i:I
+
+.field public j:Z
+
+.field public k:Landroidx/compose/ui/layout/s0;
+
+.field public final l:Landroidx/compose/ui/layout/t0;
+
+.field public final m:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+.field public final n:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+
+.field public final o:Landroidx/compose/foundation/lazy/layout/g;
+
+.field public final p:Landroidx/compose/foundation/lazy/layout/B;
+
+.field public final q:Landroidx/compose/foundation/lazy/grid/u;
+
+.field public final r:Landroidx/compose/foundation/lazy/layout/A;
+
+.field public final s:Landroidx/compose/runtime/E0;
+
+.field public final t:Landroidx/compose/runtime/E0;
+
+.field public final u:Landroidx/compose/runtime/E0;
+
+.field public final v:Landroidx/compose/runtime/E0;
+
+.field public final w:Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState$a;-><init>(Lkotlin/jvm/internal/i;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->x:Landroidx/compose/foundation/lazy/grid/LazyGridState$a;
+
+    .line 8
+    .line 9
+    sget-object v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$Companion$Saver$1;->INSTANCE:Landroidx/compose/foundation/lazy/grid/LazyGridState$Companion$Saver$1;
+
+    .line 10
+    .line 11
+    sget-object v1, Landroidx/compose/foundation/lazy/grid/LazyGridState$Companion$Saver$2;->INSTANCE:Landroidx/compose/foundation/lazy/grid/LazyGridState$Companion$Saver$2;
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1}, LM/b;->b(Lti/p;Lti/l;)LM/w;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    sput-object v0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->y:LM/w;
+
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 6
+
+    .line 1
+    const/4 v4, 0x7
+
+    const/4 v5, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Landroidx/compose/foundation/lazy/grid/LazyGridState;-><init>(IILandroidx/compose/foundation/lazy/grid/w;ILkotlin/jvm/internal/i;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(II)V
+    .locals 3
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    .line 25
+    invoke-static {v2, v0, v1}, Landroidx/compose/foundation/lazy/grid/x;->b(IILjava/lang/Object;)Landroidx/compose/foundation/lazy/grid/w;
+
+    move-result-object v0
+
+    invoke-direct {p0, p1, p2, v0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;-><init>(IILandroidx/compose/foundation/lazy/grid/w;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIILkotlin/jvm/internal/i;)V
+    .locals 1
+
+    and-int/lit8 p4, p3, 0x1
+
+    const/4 v0, 0x0
+
+    if-eqz p4, :cond_0
+
+    const/4 p1, 0x0
+
+    :cond_0
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_1
+
+    const/4 p2, 0x0
+
+    .line 24
+    :cond_1
+    invoke-direct {p0, p1, p2}, Landroidx/compose/foundation/lazy/grid/LazyGridState;-><init>(II)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IILandroidx/compose/foundation/lazy/grid/w;)V
+    .locals 3
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->a:Landroidx/compose/foundation/lazy/grid/w;
+
+    .line 4
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/z;
+
+    invoke-direct {v0, p1, p2}, Landroidx/compose/foundation/lazy/grid/z;-><init>(II)V
+
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 5
+    invoke-static {}, Landroidx/compose/foundation/lazy/grid/LazyGridStateKt;->a()Landroidx/compose/foundation/lazy/grid/p;
+
+    move-result-object p2
+
+    invoke-static {}, Landroidx/compose/runtime/W1;->k()Landroidx/compose/runtime/U1;
+
+    move-result-object v1
+
+    invoke-static {p2, v1}, Landroidx/compose/runtime/W1;->i(Ljava/lang/Object;Landroidx/compose/runtime/U1;)Landroidx/compose/runtime/E0;
+
+    move-result-object p2
+
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 6
+    invoke-static {}, Landroidx/compose/foundation/interaction/h;->a()Landroidx/compose/foundation/interaction/i;
+
+    move-result-object p2
+
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->f:Landroidx/compose/foundation/interaction/i;
+
+    .line 7
+    new-instance p2, Landroidx/compose/foundation/lazy/grid/LazyGridState$scrollableState$1;
+
+    invoke-direct {p2, p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState$scrollableState$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;)V
+
+    invoke-static {p2}, Landroidx/compose/foundation/gestures/ScrollableStateKt;->a(Lti/l;)Landroidx/compose/foundation/gestures/C;
+
+    move-result-object p2
+
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->h:Landroidx/compose/foundation/gestures/C;
+
+    const/4 p2, 0x1
+
+    .line 8
+    iput-boolean p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->j:Z
+
+    .line 9
+    new-instance v1, Landroidx/compose/foundation/lazy/grid/LazyGridState$c;
+
+    invoke-direct {v1, p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState$c;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;)V
+
+    iput-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->l:Landroidx/compose/ui/layout/t0;
+
+    .line 10
+    new-instance v1, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+    invoke-direct {v1}, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;-><init>()V
+
+    iput-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->m:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+    .line 11
+    new-instance v1, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+
+    invoke-direct {v1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;-><init>()V
+
+    iput-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->n:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+
+    .line 12
+    new-instance v1, Landroidx/compose/foundation/lazy/layout/g;
+
+    invoke-direct {v1}, Landroidx/compose/foundation/lazy/layout/g;-><init>()V
+
+    iput-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->o:Landroidx/compose/foundation/lazy/layout/g;
+
+    .line 13
+    new-instance v1, Landroidx/compose/foundation/lazy/layout/B;
+
+    invoke-interface {p3}, Landroidx/compose/foundation/lazy/grid/w;->b()Landroidx/compose/foundation/lazy/layout/Q;
+
+    move-result-object p3
+
+    new-instance v2, Landroidx/compose/foundation/lazy/grid/LazyGridState$prefetchState$1;
+
+    invoke-direct {v2, p0, p1}, Landroidx/compose/foundation/lazy/grid/LazyGridState$prefetchState$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;I)V
+
+    invoke-direct {v1, p3, v2}, Landroidx/compose/foundation/lazy/layout/B;-><init>(Landroidx/compose/foundation/lazy/layout/Q;Lti/l;)V
+
+    iput-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->p:Landroidx/compose/foundation/lazy/layout/B;
+
+    .line 14
+    new-instance p1, Landroidx/compose/foundation/lazy/grid/LazyGridState$b;
+
+    invoke-direct {p1, p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState$b;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;)V
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->q:Landroidx/compose/foundation/lazy/grid/u;
+
+    .line 15
+    new-instance p1, Landroidx/compose/foundation/lazy/layout/A;
+
+    invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/A;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->r:Landroidx/compose/foundation/lazy/layout/A;
+
+    .line 16
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->b()Landroidx/compose/foundation/lazy/layout/y;
+
+    const/4 p1, 0x0
+
+    .line 17
+    invoke-static {p1, p2, p1}, Landroidx/compose/foundation/lazy/layout/M;->c(Landroidx/compose/runtime/E0;ILkotlin/jvm/internal/i;)Landroidx/compose/runtime/E0;
+
+    move-result-object p3
+
+    iput-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->s:Landroidx/compose/runtime/E0;
+
+    .line 18
+    invoke-static {p1, p2, p1}, Landroidx/compose/foundation/lazy/layout/M;->c(Landroidx/compose/runtime/E0;ILkotlin/jvm/internal/i;)Landroidx/compose/runtime/E0;
+
+    move-result-object p2
+
+    iput-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->t:Landroidx/compose/runtime/E0;
+
+    .line 19
+    sget-object p2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    const/4 p3, 0x2
+
+    invoke-static {p2, p1, p3, p1}, Landroidx/compose/runtime/W1;->j(Ljava/lang/Object;Landroidx/compose/runtime/U1;ILjava/lang/Object;)Landroidx/compose/runtime/E0;
+
+    move-result-object v0
+
+    iput-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->u:Landroidx/compose/runtime/E0;
+
+    .line 20
+    invoke-static {p2, p1, p3, p1}, Landroidx/compose/runtime/W1;->j(Ljava/lang/Object;Landroidx/compose/runtime/U1;ILjava/lang/Object;)Landroidx/compose/runtime/E0;
+
+    move-result-object p1
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->v:Landroidx/compose/runtime/E0;
+
+    .line 21
+    new-instance p1, Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;
+
+    invoke-direct {p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;-><init>()V
+
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->w:Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IILandroidx/compose/foundation/lazy/grid/w;ILkotlin/jvm/internal/i;)V
+    .locals 1
+
+    and-int/lit8 p5, p4, 0x1
+
+    const/4 v0, 0x0
+
+    if-eqz p5, :cond_0
+
+    const/4 p1, 0x0
+
+    :cond_0
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_1
+
+    const/4 p2, 0x0
+
+    :cond_1
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_2
+
+    const/4 p3, 0x0
+
+    const/4 p4, 0x1
+
+    .line 22
+    invoke-static {v0, p4, p3}, Landroidx/compose/foundation/lazy/grid/x;->b(IILjava/lang/Object;)Landroidx/compose/foundation/lazy/grid/w;
+
+    move-result-object p3
+
+    .line 23
+    :cond_2
+    invoke-direct {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;-><init>(IILandroidx/compose/foundation/lazy/grid/w;)V
+
+    return-void
+.end method
+
+.method public static synthetic J(Landroidx/compose/foundation/lazy/grid/LazyGridState;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    and-int/lit8 p4, p4, 0x2
+
+    .line 2
+    .line 3
+    if-eqz p4, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p2, 0x0
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->I(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+.method private K(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->v:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/E0;->setValue(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private L(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->u:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-interface {v0, p1}, Landroidx/compose/runtime/E0;->setValue(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public static final synthetic f(Landroidx/compose/foundation/lazy/grid/LazyGridState;)Landroidx/compose/runtime/E0;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic g(Landroidx/compose/foundation/lazy/grid/LazyGridState;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->y()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    return p0
+.end method
+
+.method public static final synthetic h(Landroidx/compose/foundation/lazy/grid/LazyGridState;)Landroidx/compose/foundation/lazy/grid/w;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->a:Landroidx/compose/foundation/lazy/grid/w;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic i()LM/w;
+    .locals 1
+
+    .line 1
+    sget-object v0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->y:LM/w;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public static final synthetic j(Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/ui/layout/s0;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->k:Landroidx/compose/ui/layout/s0;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public static synthetic l(Landroidx/compose/foundation/lazy/grid/LazyGridState;Landroidx/compose/foundation/lazy/grid/p;ZZILjava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    and-int/lit8 p4, p4, 0x4
+
+    .line 2
+    .line 3
+    if-eqz p4, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p3, 0x0
+
+    .line 6
+    :cond_0
+    invoke-virtual {p0, p1, p2, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->k(Landroidx/compose/foundation/lazy/grid/p;ZZ)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A()Landroidx/compose/runtime/E0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->s:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final B()Landroidx/compose/foundation/lazy/layout/B;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->p:Landroidx/compose/foundation/lazy/layout/B;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final C()Landroidx/compose/ui/layout/t0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->l:Landroidx/compose/ui/layout/t0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final D()F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->w:Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;->b()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final E()F
+    .locals 1
+
+    .line 1
+    iget v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final F()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/runtime/E0;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/p;->u()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public final G(FLandroidx/compose/foundation/lazy/grid/n;)V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->j:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->a:Landroidx/compose/foundation/lazy/grid/w;
+
+    .line 6
+    .line 7
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->q:Landroidx/compose/foundation/lazy/grid/u;
+
+    .line 8
+    .line 9
+    invoke-interface {v0, v1, p1, p2}, Landroidx/compose/foundation/lazy/grid/w;->c(Landroidx/compose/foundation/lazy/grid/u;FLandroidx/compose/foundation/lazy/grid/n;)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    return-void
+.end method
+
+.method public final H(F)F
+    .locals 8
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    cmpg-float v1, p1, v0
+
+    .line 3
+    .line 4
+    if-gez v1, :cond_0
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d()Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v1
+
+    .line 10
+    if-eqz v1, :cond_1
+
+    .line 11
+    .line 12
+    :cond_0
+    cmpl-float v1, p1, v0
+
+    .line 13
+    .line 14
+    if-lez v1, :cond_2
+
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->c()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    if-nez v1, :cond_2
+
+    .line 21
+    .line 22
+    :cond_1
+    return v0
+
+    .line 23
+    :cond_2
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 24
+    .line 25
+    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v1
+
+    .line 29
+    const/high16 v2, 0x3f000000    # 0.5f
+
+    .line 30
+    .line 31
+    const/4 v3, 0x1
+
+    .line 32
+    cmpg-float v1, v1, v2
+
+    .line 33
+    .line 34
+    if-gtz v1, :cond_3
+
+    .line 35
+    .line 36
+    const/4 v1, 0x1
+
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_3
+    const/4 v1, 0x0
+
+    .line 39
+    :goto_0
+    if-nez v1, :cond_4
+
+    .line 40
+    .line 41
+    const-string v1, "entered drag with non-zero pending scroll"
+
+    .line 42
+    .line 43
+    invoke-static {v1}, Lv/e;->c(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    :cond_4
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 47
+    .line 48
+    add-float/2addr v1, p1
+
+    .line 49
+    iput v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 50
+    .line 51
+    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v1
+
+    .line 55
+    cmpl-float v1, v1, v2
+
+    .line 56
+    .line 57
+    if-lez v1, :cond_a
+
+    .line 58
+    .line 59
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 60
+    .line 61
+    invoke-static {v1}, Lvi/c;->d(F)I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v4
+
+    .line 65
+    iget-object v5, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 66
+    .line 67
+    invoke-interface {v5}, Landroidx/compose/runtime/E0;->getValue()Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v5
+
+    .line 71
+    check-cast v5, Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 72
+    .line 73
+    iget-boolean v6, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->b:Z
+
+    .line 74
+    .line 75
+    xor-int/2addr v6, v3
+
+    .line 76
+    invoke-virtual {v5, v4, v6}, Landroidx/compose/foundation/lazy/grid/p;->j(IZ)Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v5
+
+    .line 80
+    if-eqz v5, :cond_7
+
+    .line 81
+    .line 82
+    iget-object v6, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->c:Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 83
+    .line 84
+    if-eqz v6, :cond_7
+
+    .line 85
+    .line 86
+    const/4 v7, 0x0
+
+    .line 87
+    if-eqz v6, :cond_5
+
+    .line 88
+    .line 89
+    invoke-virtual {v6, v4, v3}, Landroidx/compose/foundation/lazy/grid/p;->j(IZ)Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v4
+
+    .line 93
+    goto :goto_1
+
+    .line 94
+    :cond_5
+    move-object v4, v7
+
+    .line 95
+    :goto_1
+    if-eqz v4, :cond_6
+
+    .line 96
+    .line 97
+    iput-object v4, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->c:Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 98
+    .line 99
+    goto :goto_2
+
+    .line 100
+    :cond_6
+    move-object v5, v7
+
+    .line 101
+    :cond_7
+    :goto_2
+    if-eqz v5, :cond_8
+
+    .line 102
+    .line 103
+    iget-boolean v4, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->b:Z
+
+    .line 104
+    .line 105
+    invoke-virtual {p0, v5, v4, v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->k(Landroidx/compose/foundation/lazy/grid/p;ZZ)V
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->s:Landroidx/compose/runtime/E0;
+
+    .line 109
+    .line 110
+    invoke-static {v3}, Landroidx/compose/foundation/lazy/layout/M;->f(Landroidx/compose/runtime/E0;)V
+
+    .line 111
+    .line 112
+    .line 113
+    iget v3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 114
+    .line 115
+    sub-float/2addr v1, v3
+
+    .line 116
+    invoke-virtual {p0, v1, v5}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->G(FLandroidx/compose/foundation/lazy/grid/n;)V
+
+    .line 117
+    .line 118
+    .line 119
+    goto :goto_3
+
+    .line 120
+    :cond_8
+    iget-object v3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->k:Landroidx/compose/ui/layout/s0;
+
+    .line 121
+    .line 122
+    if-eqz v3, :cond_9
+
+    .line 123
+    .line 124
+    invoke-interface {v3}, Landroidx/compose/ui/layout/s0;->g()V
+
+    .line 125
+    .line 126
+    .line 127
+    :cond_9
+    iget v3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 128
+    .line 129
+    sub-float/2addr v1, v3
+
+    .line 130
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->v()Landroidx/compose/foundation/lazy/grid/n;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v3
+
+    .line 134
+    invoke-virtual {p0, v1, v3}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->G(FLandroidx/compose/foundation/lazy/grid/n;)V
+
+    .line 135
+    .line 136
+    .line 137
+    :cond_a
+    :goto_3
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 138
+    .line 139
+    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v1
+
+    .line 143
+    cmpg-float v1, v1, v2
+
+    .line 144
+    .line 145
+    if-gtz v1, :cond_b
+
+    .line 146
+    .line 147
+    return p1
+
+    .line 148
+    :cond_b
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 149
+    .line 150
+    sub-float/2addr p1, v1
+
+    .line 151
+    iput v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 152
+    .line 153
+    return p1
+.end method
+
+.method public final I(IILkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    new-instance v2, Landroidx/compose/foundation/lazy/grid/LazyGridState$scrollToItem$2;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-direct {v2, p0, p1, p2, v0}, Landroidx/compose/foundation/lazy/grid/LazyGridState$scrollToItem$2;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;IILkotlin/coroutines/Continuation;)V
+
+    .line 5
+    .line 6
+    .line 7
+    const/4 v4, 0x1
+
+    .line 8
+    const/4 v5, 0x0
+
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    move-object v0, p0
+
+    .line 11
+    move-object v3, p3
+
+    .line 12
+    invoke-static/range {v0 .. v5}, Landroidx/compose/foundation/gestures/B;->c(Landroidx/compose/foundation/gestures/C;Landroidx/compose/foundation/MutatePriority;Lti/p;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    if-ne p1, p2, :cond_0
+
+    .line 21
+    .line 22
+    return-object p1
+
+    .line 23
+    :cond_0
+    sget-object p1, Lkotlin/y;->a:Lkotlin/y;
+
+    .line 24
+    .line 25
+    return-object p1
+.end method
+
+.method public final M(IIZ)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->a()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-ne v0, p1, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->c()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eq v0, p2, :cond_1
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->n:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;->p()V
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/lazy/grid/z;->d(II)V
+
+    .line 25
+    .line 26
+    .line 27
+    if-eqz p3, :cond_3
+
+    .line 28
+    .line 29
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->k:Landroidx/compose/ui/layout/s0;
+
+    .line 30
+    .line 31
+    if-eqz p1, :cond_2
+
+    .line 32
+    .line 33
+    invoke-interface {p1}, Landroidx/compose/ui/layout/s0;->g()V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_2
+    return-void
+
+    .line 37
+    :cond_3
+    iget-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->t:Landroidx/compose/runtime/E0;
+
+    .line 38
+    .line 39
+    invoke-static {p1}, Landroidx/compose/foundation/lazy/layout/M;->f(Landroidx/compose/runtime/E0;)V
+
+    .line 40
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method public final N(Landroidx/compose/foundation/lazy/grid/i;I)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Landroidx/compose/foundation/lazy/grid/z;->j(Landroidx/compose/foundation/lazy/grid/i;I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public a()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->h:Landroidx/compose/foundation/gestures/C;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/foundation/gestures/C;->a()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public b(F)F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->h:Landroidx/compose/foundation/gestures/C;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Landroidx/compose/foundation/gestures/C;->b(F)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public c()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->v:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/runtime/h2;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->u:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/runtime/h2;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public e(Landroidx/compose/foundation/MutatePriority;Lti/p;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    instance-of v0, p3, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    move-object v0, p3
+
+    .line 6
+    check-cast v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;
+
+    .line 7
+    .line 8
+    iget v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
+
+    .line 9
+    .line 10
+    const/high16 v2, -0x80000000
+
+    .line 11
+    .line 12
+    and-int v3, v1, v2
+
+    .line 13
+    .line 14
+    if-eqz v3, :cond_0
+
+    .line 15
+    .line 16
+    sub-int/2addr v1, v2
+
+    .line 17
+    iput v1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    new-instance v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, p0, p3}, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;-><init>(Landroidx/compose/foundation/lazy/grid/LazyGridState;Lkotlin/coroutines/Continuation;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :goto_0
+    iget-object p3, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->result:Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v1
+
+    .line 31
+    iget v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
+
+    .line 32
+    .line 33
+    const/4 v3, 0x2
+
+    .line 34
+    const/4 v4, 0x1
+
+    .line 35
+    if-eqz v2, :cond_3
+
+    .line 36
+    .line 37
+    if-eq v2, v4, :cond_2
+
+    .line 38
+    .line 39
+    if-ne v2, v3, :cond_1
+
+    .line 40
+    .line 41
+    invoke-static {p3}, Lkotlin/n;->b(Ljava/lang/Object;)V
+
+    .line 42
+    .line 43
+    .line 44
+    goto :goto_3
+
+    .line 45
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 46
+    .line 47
+    const-string p2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 48
+    .line 49
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    throw p1
+
+    .line 53
+    :cond_2
+    iget-object p1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$2:Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    move-object p2, p1
+
+    .line 56
+    check-cast p2, Lti/p;
+
+    .line 57
+    .line 58
+    iget-object p1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$1:Ljava/lang/Object;
+
+    .line 59
+    .line 60
+    check-cast p1, Landroidx/compose/foundation/MutatePriority;
+
+    .line 61
+    .line 62
+    iget-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$0:Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    check-cast v2, Landroidx/compose/foundation/lazy/grid/LazyGridState;
+
+    .line 65
+    .line 66
+    invoke-static {p3}, Lkotlin/n;->b(Ljava/lang/Object;)V
+
+    .line 67
+    .line 68
+    .line 69
+    goto :goto_1
+
+    .line 70
+    :cond_3
+    invoke-static {p3}, Lkotlin/n;->b(Ljava/lang/Object;)V
+
+    .line 71
+    .line 72
+    .line 73
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->m:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+    .line 74
+    .line 75
+    iput-object p0, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$0:Ljava/lang/Object;
+
+    .line 76
+    .line 77
+    iput-object p1, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$1:Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    iput-object p2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$2:Ljava/lang/Object;
+
+    .line 80
+    .line 81
+    iput v4, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
+
+    .line 82
+    .line 83
+    invoke-virtual {p3, v0}, Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;->b(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p3
+
+    .line 87
+    if-ne p3, v1, :cond_4
+
+    .line 88
+    .line 89
+    goto :goto_2
+
+    .line 90
+    :cond_4
+    move-object v2, p0
+
+    .line 91
+    :goto_1
+    iget-object p3, v2, Landroidx/compose/foundation/lazy/grid/LazyGridState;->h:Landroidx/compose/foundation/gestures/C;
+
+    .line 92
+    .line 93
+    const/4 v2, 0x0
+
+    .line 94
+    iput-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$0:Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    iput-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$1:Ljava/lang/Object;
+
+    .line 97
+    .line 98
+    iput-object v2, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->L$2:Ljava/lang/Object;
+
+    .line 99
+    .line 100
+    iput v3, v0, Landroidx/compose/foundation/lazy/grid/LazyGridState$scroll$1;->label:I
+
+    .line 101
+    .line 102
+    invoke-interface {p3, p1, p2, v0}, Landroidx/compose/foundation/gestures/C;->e(Landroidx/compose/foundation/MutatePriority;Lti/p;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object p1
+
+    .line 106
+    if-ne p1, v1, :cond_5
+
+    .line 107
+    .line 108
+    :goto_2
+    return-object v1
+
+    .line 109
+    :cond_5
+    :goto_3
+    sget-object p1, Lkotlin/y;->a:Lkotlin/y;
+
+    .line 110
+    .line 111
+    return-object p1
+.end method
+
+.method public final k(Landroidx/compose/foundation/lazy/grid/p;ZZ)V
+    .locals 3
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->b:Z
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iput-object p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->c:Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 11
+    if-eqz p2, :cond_1
+
+    .line 12
+    .line 13
+    iput-boolean v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->b:Z
+
+    .line 14
+    .line 15
+    :cond_1
+    iget v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->m()F
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v2
+
+    .line 21
+    sub-float/2addr v1, v2
+
+    .line 22
+    iput v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->g:F
+
+    .line 23
+    .line 24
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 25
+    .line 26
+    invoke-interface {v1, p1}, Landroidx/compose/runtime/E0;->setValue(Ljava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->k()Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    invoke-direct {p0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->K(Z)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->l()Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v1
+
+    .line 40
+    invoke-direct {p0, v1}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->L(Z)V
+
+    .line 41
+    .line 42
+    .line 43
+    if-eqz p3, :cond_2
+
+    .line 44
+    .line 45
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 46
+    .line 47
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->q()I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v1
+
+    .line 51
+    invoke-virtual {p3, v1}, Landroidx/compose/foundation/lazy/grid/z;->i(I)V
+
+    .line 52
+    .line 53
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_2
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 56
+    .line 57
+    invoke-virtual {p3, p1}, Landroidx/compose/foundation/lazy/grid/z;->h(Landroidx/compose/foundation/lazy/grid/p;)V
+
+    .line 58
+    .line 59
+    .line 60
+    iget-boolean p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->j:Z
+
+    .line 61
+    .line 62
+    if-eqz p3, :cond_3
+
+    .line 63
+    .line 64
+    iget-object p3, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->a:Landroidx/compose/foundation/lazy/grid/w;
+
+    .line 65
+    .line 66
+    iget-object v1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->q:Landroidx/compose/foundation/lazy/grid/u;
+
+    .line 67
+    .line 68
+    invoke-interface {p3, v1, p1}, Landroidx/compose/foundation/lazy/grid/w;->d(Landroidx/compose/foundation/lazy/grid/u;Landroidx/compose/foundation/lazy/grid/n;)V
+
+    .line 69
+    .line 70
+    .line 71
+    :cond_3
+    :goto_0
+    if-eqz p2, :cond_4
+
+    .line 72
+    .line 73
+    iget-object p2, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->w:Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;
+
+    .line 74
+    .line 75
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->t()F
+
+    .line 76
+    .line 77
+    .line 78
+    move-result p3
+
+    .line 79
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->o()Lm0/e;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v1
+
+    .line 83
+    invoke-virtual {p1}, Landroidx/compose/foundation/lazy/grid/p;->n()Lkotlinx/coroutines/M;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p1
+
+    .line 87
+    invoke-virtual {p2, p3, v1, p1}, Landroidx/compose/foundation/lazy/layout/LazyLayoutScrollDeltaBetweenPasses;->c(FLm0/e;Lkotlinx/coroutines/M;)V
+
+    .line 88
+    .line 89
+    .line 90
+    :cond_4
+    iget p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->i:I
+
+    .line 91
+    .line 92
+    add-int/2addr p1, v0
+
+    .line 93
+    iput p1, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->i:I
+
+    .line 94
+    .line 95
+    return-void
+.end method
+
+.method public final m()Landroidx/compose/foundation/lazy/grid/p;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->c:Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final n()Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->m:Landroidx/compose/foundation/lazy/layout/AwaitFirstLayoutModifier;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final o()Landroidx/compose/foundation/lazy/layout/g;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->o:Landroidx/compose/foundation/lazy/layout/g;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final p()Lm0/e;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/runtime/E0;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroidx/compose/foundation/lazy/grid/p;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/p;->o()Lm0/e;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    return-object v0
+.end method
+
+.method public final q()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->a()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final r()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->c()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final s()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->b:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final t()Landroidx/compose/foundation/interaction/i;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->f:Landroidx/compose/foundation/interaction/i;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final u()Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->n:Landroidx/compose/foundation/lazy/layout/LazyLayoutItemAnimator;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final v()Landroidx/compose/foundation/lazy/grid/n;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->e:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Landroidx/compose/runtime/E0;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroidx/compose/foundation/lazy/grid/n;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final w()Landroidx/compose/runtime/E0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->t:Landroidx/compose/runtime/E0;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final x()Lyi/f;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->d:Landroidx/compose/foundation/lazy/grid/z;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroidx/compose/foundation/lazy/grid/z;->b()Landroidx/compose/foundation/lazy/layout/y;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0}, Landroidx/compose/runtime/h2;->getValue()Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    check-cast v0, Lyi/f;
+
+    .line 12
+    .line 13
+    return-object v0
+.end method
+
+.method public final y()I
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/compose/foundation/lazy/grid/LazyGridState;->F()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    mul-int/lit8 v0, v0, 0x64
+
+    .line 6
+    .line 7
+    return v0
+.end method
+
+.method public final z()Landroidx/compose/foundation/lazy/layout/A;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/compose/foundation/lazy/grid/LazyGridState;->r:Landroidx/compose/foundation/lazy/layout/A;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

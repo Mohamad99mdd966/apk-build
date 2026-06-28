@@ -1,0 +1,280 @@
+.class public final Lokhttp3/internal/cache/a$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lqj/U;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lokhttp3/internal/cache/a;->b(Lokhttp3/internal/cache/b;Lokhttp3/A;)Lokhttp3/A;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public a:Z
+
+.field public final synthetic b:Lqj/f;
+
+.field public final synthetic c:Lokhttp3/internal/cache/b;
+
+.field public final synthetic d:Lqj/e;
+
+
+# direct methods
+.method public constructor <init>(Lqj/f;Lokhttp3/internal/cache/b;Lqj/e;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lokhttp3/internal/cache/a$b;->b:Lqj/f;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lokhttp3/internal/cache/a$b;->c:Lokhttp3/internal/cache/b;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lokhttp3/internal/cache/a$b;->d:Lqj/e;
+
+    .line 6
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public close()V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/16 v0, 0x64
+
+    .line 6
+    .line 7
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 8
+    .line 9
+    invoke-static {p0, v0, v1}, Lej/e;->s(Lqj/U;ILjava/util/concurrent/TimeUnit;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    if-nez v0, :cond_0
+
+    .line 14
+    .line 15
+    const/4 v0, 0x1
+
+    .line 16
+    iput-boolean v0, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lokhttp3/internal/cache/a$b;->c:Lokhttp3/internal/cache/b;
+
+    .line 19
+    .line 20
+    invoke-interface {v0}, Lokhttp3/internal/cache/b;->a()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_0
+    iget-object v0, p0, Lokhttp3/internal/cache/a$b;->b:Lqj/f;
+
+    .line 24
+    .line 25
+    invoke-interface {v0}, Lqj/U;->close()V
+
+    .line 26
+    .line 27
+    .line 28
+    return-void
+.end method
+
+.method public o1(Lqj/d;J)J
+    .locals 8
+
+    .line 1
+    const-string v0, "sink"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->h(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    :try_start_0
+    iget-object v0, p0, Lokhttp3/internal/cache/a$b;->b:Lqj/f;
+
+    .line 8
+    .line 9
+    invoke-interface {v0, p1, p2, p3}, Lqj/U;->o1(Lqj/d;J)J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v6
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 13
+    const-wide/16 p2, -0x1
+
+    .line 14
+    .line 15
+    cmp-long v0, v6, p2
+
+    .line 16
+    .line 17
+    if-nez v0, :cond_1
+
+    .line 18
+    .line 19
+    iget-boolean p1, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 20
+    .line 21
+    if-nez p1, :cond_0
+
+    .line 22
+    .line 23
+    iput-boolean v1, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 24
+    .line 25
+    iget-object p1, p0, Lokhttp3/internal/cache/a$b;->d:Lqj/e;
+
+    .line 26
+    .line 27
+    invoke-interface {p1}, Lqj/T;->close()V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_0
+    return-wide p2
+
+    .line 31
+    :cond_1
+    iget-object p2, p0, Lokhttp3/internal/cache/a$b;->d:Lqj/e;
+
+    .line 32
+    .line 33
+    invoke-interface {p2}, Lqj/e;->o()Lqj/d;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v3
+
+    .line 37
+    invoke-virtual {p1}, Lqj/d;->size()J
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-wide p2
+
+    .line 41
+    sub-long v4, p2, v6
+
+    .line 42
+    .line 43
+    move-object v2, p1
+
+    .line 44
+    invoke-virtual/range {v2 .. v7}, Lqj/d;->i(Lqj/d;JJ)Lqj/d;
+
+    .line 45
+    .line 46
+    .line 47
+    iget-object p1, p0, Lokhttp3/internal/cache/a$b;->d:Lqj/e;
+
+    .line 48
+    .line 49
+    invoke-interface {p1}, Lqj/e;->b0()Lqj/e;
+
+    .line 50
+    .line 51
+    .line 52
+    return-wide v6
+
+    .line 53
+    :catch_0
+    move-exception v0
+
+    .line 54
+    move-object p1, v0
+
+    .line 55
+    iget-boolean p2, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 56
+    .line 57
+    if-nez p2, :cond_2
+
+    .line 58
+    .line 59
+    iput-boolean v1, p0, Lokhttp3/internal/cache/a$b;->a:Z
+
+    .line 60
+    .line 61
+    iget-object p2, p0, Lokhttp3/internal/cache/a$b;->c:Lokhttp3/internal/cache/b;
+
+    .line 62
+    .line 63
+    invoke-interface {p2}, Lokhttp3/internal/cache/b;->a()V
+
+    .line 64
+    .line 65
+    .line 66
+    :cond_2
+    throw p1
+.end method
+
+.method public p()Lqj/V;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lokhttp3/internal/cache/a$b;->b:Lqj/f;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lqj/U;->p()Lqj/V;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method

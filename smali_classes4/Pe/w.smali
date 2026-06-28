@@ -1,0 +1,64 @@
+.class public final LPe/w;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:LPe/b;
+
+.field public final b:Lof/k;
+
+
+# direct methods
+.method public constructor <init>(LPe/b;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lof/k;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Lof/k;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, LPe/w;->b:Lof/k;
+
+    .line 10
+    .line 11
+    iput-object p1, p0, LPe/w;->a:LPe/b;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()LPe/b;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LPe/w;->a:LPe/b;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Lof/k;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LPe/w;->b:Lof/k;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

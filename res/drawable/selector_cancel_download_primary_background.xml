@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/ripple_color"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask" android:drawable="@drawable/shape_cancel_download_ripple" />
+    <item android:drawable="@drawable/shape_cancel_download_primary_background" />
+</ripple>
