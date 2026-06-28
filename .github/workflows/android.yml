@@ -1,4 +1,4 @@
-name: Build APK
+name: Build APK (apktool)
 
 on:
   push:
@@ -9,22 +9,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up JDK
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: 17
+      - name: Install Java
+        run: sudo apt-get update && sudo apt-get install -y openjdk-17-jdk
+
+      - name: Install Apktool
+        run: |
+          wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
+          wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar -O apktool.jar
+          chmod +x apktool
+          sudo mv apktool /usr/local/bin/
+          sudo mv apktool.jar /usr/local/bin/
 
       - name: Build APK
-        run: |
-          chmod +x gradlew || true
-          ./gradlew assembleDebug || true
+        run: apktool b project -o app.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-apk
-          path: "**/*.apk"
+          path: app.apk
